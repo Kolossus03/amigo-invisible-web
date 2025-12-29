@@ -1,7 +1,7 @@
 # Amigo Invisible Web
 
 [![CI](https://github.com/Kolossus03/amigo-invisible-web/actions/workflows/ci.yml/badge.svg)](https://github.com/Kolossus03/amigo-invisible-web/actions/workflows/ci.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/<BADGE_ID>/deploy-status)](https://app.netlify.com/sites/<SITE_NAME>/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7c6abc98-2dd5-4d17-a7fa-d0424a600a67/deploy-status)](https://app.netlify.com/projects/amig0-invisible/deploys)
 
 Minimal React + Vite app to run a Secret Santa (Amigo Invisible) draw entirely on the client.
 
@@ -74,7 +74,7 @@ This repository includes:
 
 You can add the CI badge to the README after your first run using:
 
-`![CI](https://github.com/Kolossus03/amigo-invisible-web/actions/workflows/ci.yml/badge.svg)`
+`![CI](https://github.com/USER/REPOR/actions/workflows/ci.yml/badge.svg)`
 
 
 ## Git / Commit
@@ -107,7 +107,6 @@ git branch -M main
 - Tests use Vitest and can run with `npm test`.
 - The draw algorithm ensures no one is assigned themselves and runs entirely on the client.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7c6abc98-2dd5-4d17-a7fa-d0424a600a67/deploy-status)](https://app.netlify.com/projects/amig0-invisible/deploys)
 
 ## License
 
