@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 360ms ease forwards;
+}
+
+/* Button polish */
+.btn {
+  transition: transform .12s ease, box-shadow .12s ease;
+  will-change: transform;
+}
+.btn:active { transform: translateY(1px) scale(.998); }
+.btn-primary { background-color: #2563eb; color: white; }
+.btn-green { background-color: #16a34a; color: white; }
+.btn-muted { background-color: #e5e7eb; color: #111827; }
+
+/* Toast */
+.toast {
+  background: rgba(17,24,39,0.04);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Fallback basic styles if Tailwind isn't installed yet */
+body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
