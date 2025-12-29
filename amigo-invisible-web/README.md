@@ -83,6 +83,8 @@ git branch -M main
 - Tests use Vitest and can run with `npm test`.
 - The draw algorithm ensures no one is assigned themselves and runs entirely on the client.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7c6abc98-2dd5-4d17-a7fa-d0424a600a67/deploy-status)](https://app.netlify.com/projects/amig0-invisible/deploys)
+
 ## License
 
 MIT
