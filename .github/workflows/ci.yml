@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  pull_request:
+    paths:
+      - 'amigo-invisible-web/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'amigo-invisible-web/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: 'npm'
+          cache-dependency-path: amigo-invisible-web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./amigo-invisible-web
+
+      - name: Run tests
+        run: npm test --silent
+        working-directory: ./amigo-invisible-web
+
+      - name: Build
+        run: npm run build
+        working-directory: ./amigo-invisible-web

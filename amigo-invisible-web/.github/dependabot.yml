@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    # You can later restrict update types (e.g., only 'semver:minor' or 'all')
+    # and add reviewers or labels

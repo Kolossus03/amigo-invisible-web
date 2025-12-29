@@ -40,11 +40,17 @@ npm test
 
 The app is a static Vite site. You can deploy to Netlify or Vercel (both have generous free tiers).
 
+**Live demo:** https://your-site.netlify.app  <!-- Replace with your actual site URL -->
+
 Netlify (recommended for simplicity):
 - Connect your GitHub repo to Netlify
+- Set **Base directory** to `amigo-invisible-web` (this ensures files outside the web app, like `.py` files, are ignored)
 - Build command: `npm run build`
 - Publish directory: `dist`
 - A `netlify.toml` is included to simplify configuration
+- Add your deploy badge: Netlify → Site settings → Deploys → Badge and paste the markdown below where indicated in this README:
+
+  `![Netlify Status](https://api.netlify.com/api/v1/badges/<BADGE_ID>/deploy-status)`
 
 Vercel:
 - Import the repo on Vercel
@@ -52,6 +58,22 @@ Vercel:
 
 Manual (single deploy):
 - Build locally `npm run build` and drag the contents of the `dist` folder to Netlify's drag-and-drop deploy area.
+
+---
+
+## CI & Dependabot
+
+This repository includes:
+
+- **GitHub Actions CI**: runs tests and builds for changes under `amigo-invisible-web/` (workflow file: `.github/workflows/ci.yml`).
+
+- **Dependabot** (weekly): configured to open dependency update PRs for npm (`.github/dependabot.yml`).
+
+You can add the CI badge to the README after your first run using:
+
+`![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)`
+
+Replace `<OWNER>/<REPO>` with your GitHub account and repository name.
 
 ## Git / Commit
 
