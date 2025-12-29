@@ -1,0 +1,8 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/amigo-invisible-web"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    # Keep auto-merge disabled to review updates before merging
