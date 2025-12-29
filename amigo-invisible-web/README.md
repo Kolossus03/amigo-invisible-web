@@ -1,5 +1,8 @@
 # Amigo Invisible Web
 
+[![CI](https://github.com/Kolossus03/amigo-invisible-web/actions/workflows/ci.yml/badge.svg)](https://github.com/Kolossus03/amigo-invisible-web/actions/workflows/ci.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/<BADGE_ID>/deploy-status)](https://app.netlify.com/sites/<SITE_NAME>/deploys)
+
 Minimal React + Vite app to run a Secret Santa (Amigo Invisible) draw entirely on the client.
 
 ## Quick Start
@@ -40,7 +43,7 @@ npm test
 
 The app is a static Vite site. You can deploy to Netlify or Vercel (both have generous free tiers).
 
-**Live demo:** https://your-site.netlify.app  <!-- Replace with your actual site URL -->
+**Live demo:** https://amig0-invisible.netlify.app/  <!-- Replace with your actual site URL -->
 
 Netlify (recommended for simplicity):
 - Connect your GitHub repo to Netlify
@@ -71,9 +74,8 @@ This repository includes:
 
 You can add the CI badge to the README after your first run using:
 
-`![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)`
+`![CI](https://github.com/Kolossus03/amigo-invisible-web/actions/workflows/ci.yml/badge.svg)`
 
-Replace `<OWNER>/<REPO>` with your GitHub account and repository name.
 
 ## Git / Commit
 
